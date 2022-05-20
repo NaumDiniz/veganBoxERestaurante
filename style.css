@@ -1,24 +1,40 @@
-.container {
-  background-color: #00FCC2;
-
-  width:364px;
-  height: 700px;
-
-  margin: auto;
+* {
+  margin: 0;
+  box-sizing: boder-box;
 }
 
-#linha{
-  width: 300px;
-  border: 1px solid #000;
+:root {
+  font-size: 62.5%; /* 
+                        100% = 16px = 1rem
+
+                        100% = 16px
+                         %   = 10px                  
+                           
+                           10 * 100 / 16 = 62.5%
+
+
+    transformando o 16px em 10px para usar o rem
+  */
+
+}
+
+
+body{
+  background-color: rgb(3, 121, 9);
+}
+
+#cabecalho{
+  height: 10.0rem;
+
+  margin-top: 5.0rem;
+
+  background-color: rgb(53, 219, 61);
+  
 }
 
 #logo{
-  width: 100px;
-  height: 70px;
-  margin: 5px;
-}
+  width: 09.0rem;
+  padding: 0.5rem;
+  border-radius: 1.0rem;
 
-#album > img{
-  width: 364px;
-  height: 500px;
-} 
+}
