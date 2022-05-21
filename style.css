@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  box-sizing: boder-box;
+  padding: 0;
 }
 
 :root {
@@ -15,26 +15,99 @@
 
     transformando o 16px em 10px para usar o rem
   */
-
 }
 
-
-body{
+body {
   background-color: rgb(3, 121, 9);
 }
 
-#cabecalho{
-  height: 10.0rem;
+#cabecalho {
+  height: 10rem;
 
-  margin-top: 5.0rem;
+  margin-top: 5rem;
 
   background-color: rgb(53, 219, 61);
+}
+
+#logo {
+  width: 09rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+main{
+  position:relative
+}
+
+#boneca {
+  display: block;
+  /* position: absolute; */
+  right: 30rem;
+  width: 70rem;
   
 }
 
-#logo{
-  width: 09.0rem;
-  padding: 0.5rem;
-  border-radius: 1.0rem;
+h2{
+  font-size: 1.5rem;
+}
 
+/* a{
+  font-size: 1.5rem;
+} */
+
+#check{
+  display: none;
+}
+
+#icone{
+  cursor: pointer;
+  padding: 1.5rem;
+  position: absolute;
+  z-index: 1;
+  left: 128rem
+}
+
+.barra{
+  background-color: #333;
+  height: 100%;
+  width: 30.0rem;
+  position: absolute;
+  transition: all .2s linear;
+  left: 140rem
+}
+
+nav{
+  width: 100%;
+  position: absolute;
+  top: 6.0rem;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+.link{
+  background-color: #494950;
+  padding: 2.0rem;
+  font-family: Arial;
+  font-size: 12pt;
+  transition: all .2s linear;
+  color: f4f4f9;
+  border-bottom: .2rem solid #222;
+  opacity: 0;
+  margin-top: 20.rem;
+}
+
+.link:hover{
+  background-color: #050542;
+}
+
+#check:checked ~ .barra{
+  transform: translateX(-35rem);
+}
+
+#check:checked ~ .barra nav a .link{
+  opacity: 1;
+  margin-top: 0;
+  transition-delay: .2s;
 }
