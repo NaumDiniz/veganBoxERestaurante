@@ -20,12 +20,12 @@
 }
 
 body {
-  /* display: flex; */
-
+  
   background-color: rgb(255, 255, 255);
 }
 
-#cabecalho {
+#cabecalho { 
+  
   height: 11rem;
 
   margin-top: 5rem;
@@ -53,11 +53,11 @@ main{
 }
 
 #boneca {
-  display: block;
-  /* position: absolute; */
+  
+  
   right: 30rem;
   width: 70rem;
-  margin-top: -10px;
+  margin-top: -550px;
   
 }
 
@@ -136,8 +136,13 @@ nav a{
   padding: 1.6rem;
 }
 
+#menuLateral{
+  display: flex;
+  justify-content: end;
+}
 
-.navigation{
+.navigation{     
+  top: -20px;
   position: relative;
   height: 500px;
   background: #424242;
