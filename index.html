@@ -11,10 +11,52 @@
   <body>
     <header>
       <div id="cabecalho">
-        <img id="logo" src="./WhatsApp Image 2022-05-18 at 08.18.48.jpeg" alt="Logo da Vegan Box E Restaurante">
+        <img
+          id="logo"
+          src="./WhatsApp Image 2022-05-18 at 08.18.48.jpeg"
+          alt="Logo da Vegan Box E Restaurante"
+        />
+      </div>
+      <div id="titulo">
+        <h1>Vegan Box E Restaurante</h1>
       </div>
 
-      <input type="checkbox" id="check">
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="">
+              <span class="icon"><ion-icon name="home"></ion-icon></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><ion-icon name="cube"></ion-icon></span>
+              <span class="title">Produtos</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><ion-icon name="card"></ion-icon></span>
+              <span class="title">Contatos</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><ion-icon name="contacts"></ion-icon></span>
+              <span class="title">Sobre</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="">
+              <span class="icon"><ion-icon name="help-circle-outline"></ion-icon></span>
+              <span class="title">Ajuda</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <input type="checkbox" id="check">
       <label for="check" id="icone"><img src="./sala-de-estudo-tutorial-menu-lateral-retratil-com-css3-n-1-sem-javascript-icone.png" alt=""></label>
 
       <div class="barra">
@@ -23,27 +65,36 @@
           <a href=""><div class="link">Contatos</div></a>
           <a href=""><div class="link">Sobre</div></a>
         </nav>
-      </div>
-
+      </div> -->
     </header>
     <main>
-      <img id="boneca" src="WhatsApp Image 2022-05-18 at 08.18.54.jpeg" alt="boneca com camisa da Vegan Box">
+      <img
+        id="boneca"
+        src="WhatsApp Image 2022-05-18 at 08.18.54.jpeg"
+        alt="boneca com camisa da Vegan Box"
+      />
     </main>
-    <footer>
+    <footer id="rodape">
       <h2>FORMAS DE PAGAMENTO:</h2>
 
       <a href="">Instagram</a>
       <a href="">contato</a>
-
-
-     
-
-
-
     </footer>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script>
+      const list = document.querySelectorAll('.list');
+      function activeLink(){
+        list.forEach((item) => 
+        item.classList.remove('active'));
+        this.classList.add('active');
+      }
+        list.forEach((item) =>
+        item.addEventListener('click', activeLink));
+    </script>
   </body>
 </html>
-
 
 <!-- sobre 
 produtos 

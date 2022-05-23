@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 :root {
@@ -18,11 +20,13 @@
 }
 
 body {
+  /* display: flex; */
+
   background-color: rgb(3, 121, 9);
 }
 
 #cabecalho {
-  height: 10rem;
+  height: 11rem;
 
   margin-top: 5rem;
 
@@ -30,13 +34,22 @@ body {
 }
 
 #logo {
-  width: 09rem;
+  width: 10rem;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 50%;
+}
+
+#titulo{
+  position: relative;
+  top: -75px;
+  left: 110px;
+  font-size: 2.0rem;
+  color: green;
 }
 
 main{
-  position:relative
+  position:relative;
+  margin: 1.6rem;
 }
 
 #boneca {
@@ -44,6 +57,7 @@ main{
   /* position: absolute; */
   right: 30rem;
   width: 70rem;
+  margin-top: -10px;
   
 }
 
@@ -55,7 +69,7 @@ h2{
   font-size: 1.5rem;
 } */
 
-#check{
+/* #check{
   display: none;
 }
 
@@ -74,9 +88,14 @@ h2{
   position: absolute;
   transition: all .2s linear;
   left: 140rem
+} */
+
+a{
+  font-size: 1.9rem;
+  color: white; 
 }
 
-nav{
+/* nav{
   width: 100%;
   position: absolute;
   top: 6.0rem;
@@ -110,4 +129,105 @@ nav a{
   opacity: 1;
   margin-top: 0;
   transition-delay: .2s;
+} */
+
+#rodape{
+  background-color: #494950;
+  padding: 1.6rem;
+}
+
+
+.navigation{
+  margin-right: 1000px;
+  position: relative;
+  height: 500px;
+  background: #424242;
+  width: 70px;
+  box-shadow: 10px 0 0 #099c22;
+  border-left: 10px solid #424242;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navigation:hover{
+  width: 300px;
+}
+
+.navigation ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+.navigation ul li a{
+  position: relative;
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 70px;
+}
+
+.navigation ul li a .icon ion-icon{
+  position: relative;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.navigation ul li a .title{
+  position: relative;
+  display: block;
+  padding-right: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}
+
+.navigation ul li.active{
+  background-color: #099c22;
+}
+
+.navigation ul li.active a::before{
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  background: #424242;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 #099c22;
+}
+
+.navigation ul li.active a::after{
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  width: 30px;
+  height: 30px;
+  background: #424242;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0 #099c22;
 }
