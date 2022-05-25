@@ -57,15 +57,15 @@ main{
 
 main div img{
   /* position: relative; */
-  width: 100px;
+  width: 300px;
   padding: 10px;
 
   top: -540px;
 }
 
 #boneca {  
-  margin-left: 300px;
-  width: 100px;
+  margin-left: 100px;
+  width: 300px;
   /* margin-top: -550px; */
   
 }
