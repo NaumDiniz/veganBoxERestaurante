@@ -44,7 +44,7 @@ body {
 
 #titulo{
   position: relative;
-  top: -75px;
+  top: -110px;
   margin-left: 110px;
   font-size: 20px;
   color: white;
@@ -55,17 +55,43 @@ main{
   margin: 16px;
 }
 
+.balao{
+  font-size: 30px;
+  text-align: center;
+  width: 250px;
+  padding: 20px;
+  margin-left: 50px;
+  top: 25px;
+  border: 2px solid black;
+  border-radius: 45px;
+  position: relative;
+}
+
+.balao::after{
+  content: "";
+  width: 25px;
+  height: 25px;
+  display: block;
+  position: absolute;
+  top: 162px;
+  left: 50px;
+  background-color: white;
+  border: 2px solid;
+  border-color: transparent black black transparent;
+  transform: rotate(45deg);
+}
+
 main div img{
   /* position: relative; */
-  width: 400px;
-  padding: 10px;
+  width: 300px;
+  /* padding: 10px; */
 
   top: -540px;
 }
 
 #boneca {  
-  margin-left: 100px;
-  width: 400px;
+  /* margin-left: 100px; */
+  width: 300px;
   /* margin-top: -550px; */
   
 }
